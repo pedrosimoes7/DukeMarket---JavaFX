@@ -1,0 +1,12 @@
+br\com\simoes\dukemarket\javafx\model\Cliente.class
+br\com\simoes\dukemarket\javafx\model\Produto.class
+br\com\simoes\dukemarket\javafx\SecondaryController.class
+br\com\simoes\dukemarket\javafx\App.class
+br\com\simoes\dukemarket\javafx\controller\ScrProdutosController.class
+br\com\simoes\dukemarket\javafx\controller\ScrClienteController.class
+module-info.class
+br\com\simoes\dukemarket\javafx\PrimaryController.class
+br\com\simoes\dukemarket\javafx\controller\MenuPrincipalController.class
+br\com\simoes\dukemarket\javafx\DAO\ClienteDAO.class
+connection\MySQLConnection.class
+br\com\simoes\dukemarket\javafx\DAO\ProdutosDAO.class

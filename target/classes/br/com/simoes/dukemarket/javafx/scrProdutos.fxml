@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="802.0" stylesheets="@design.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.simoes.dukemarket.javafx.controller.ScrProdutosController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="200.0" prefWidth="580.0" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TableView fx:id="tblProduto" onMouseClicked="#tblProdutoOnMouseClicked" prefHeight="200.0" prefWidth="580.0" stylesheets="@design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="tcoId" prefWidth="43.0" text="ID" />
+                <TableColumn fx:id="tcoCodBarras" prefWidth="101.0" text="Cod.Barras" />
+                  <TableColumn fx:id="tcoDescricao" prefWidth="157.0" text="Descrição" />
+                  <TableColumn fx:id="tcoQtd" prefWidth="47.0" text="Qtd." />
+                  <TableColumn fx:id="tcoValorCompra" prefWidth="72.0" text="\$ Compra" />
+                  <TableColumn fx:id="tcoValorVenda" prefWidth="71.0" text="\$ Venda" />
+                  <TableColumn fx:id="tcoDataCadastro" prefWidth="88.0" text="DataCadastro" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="11.0" layoutY="220.0" prefHeight="180.0" prefWidth="375.0" stylesheets="@design.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0">
+         <children>
+            <Label layoutX="5.0" layoutY="14.0" prefHeight="17.0" prefWidth="27.0" text="ID" />
+            <Label layoutX="174.0" layoutY="14.0" text="Cod.Barras" />
+            <Label layoutX="4.0" layoutY="45.0" prefHeight="17.0" prefWidth="57.0" text="Descrição" />
+            <Label layoutX="4.0" layoutY="78.0" prefHeight="17.0" prefWidth="57.0" text="Qtd" />
+            <Label layoutX="158.0" layoutY="78.0" prefHeight="17.0" prefWidth="76.0" text="Valor Compra" />
+            <Label layoutX="-1.0" layoutY="113.0" prefHeight="17.0" prefWidth="67.0" text="Valor Venda" />
+            <Label layoutX="-5.0" layoutY="149.0" prefHeight="17.0" prefWidth="76.0" text="Data Cadastro" />
+            <TextField fx:id="txtId" layoutX="70.0" layoutY="10.0" prefHeight="25.0" prefWidth="76.0" stylesheets="@design.css" />
+            <TextField fx:id="txtCodBarras" layoutX="239.0" layoutY="10.0" prefHeight="25.0" prefWidth="134.0" stylesheets="@design.css" />
+            <TextField fx:id="txtDescricao" layoutX="70.0" layoutY="41.0" prefHeight="27.0" prefWidth="303.0" />
+            <TextField fx:id="txtQtd" layoutX="72.0" layoutY="74.0" prefHeight="25.0" prefWidth="76.0" />
+            <TextField fx:id="txtValorCompra" layoutX="234.0" layoutY="74.0" prefHeight="27.0" prefWidth="140.0" />
+            <TextField fx:id="txtValorVenda" layoutX="72.0" layoutY="109.0" prefHeight="25.0" prefWidth="76.0" />
+            <DatePicker fx:id="dtpDataCadastro" layoutX="72.0" layoutY="145.0" prefHeight="25.0" prefWidth="167.0" stylesheets="@design.css" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="386.0" layoutY="225.0" prefHeight="163.0" prefWidth="205.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <Button fx:id="btnNovo" layoutX="53.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnNovoClick" prefHeight="25.0" prefWidth="98.0" text="Novo" />
+            <Button fx:id="btnSalvar" layoutX="53.0" layoutY="57.0" mnemonicParsing="false" onAction="#btnSalvarClick" prefHeight="25.0" prefWidth="98.0" text="Salvar" />
+            <Button fx:id="btnExcluir" layoutX="54.0" layoutY="90.0" mnemonicParsing="false" onAction="#btnExcluir" prefHeight="25.0" prefWidth="98.0" text="Excluir" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
